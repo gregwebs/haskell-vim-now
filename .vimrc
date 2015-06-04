@@ -80,7 +80,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 
 " Haskell
 Plugin 'raichoo/haskell-vim'
-Plugin 'enomsg/vim-haskellConcealPlus'
+"Plugin 'enomsg/vim-haskellConcealPlus'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'Twinside/vim-hoogle'
@@ -202,7 +202,7 @@ hi Directory guifg=#8ac6f2
 hi Cursor guibg=red
 
 " Use same color behind concealed unicode characters
-hi clear Conceal
+"hi clear Conceal
 
 " Don't blink normal mode cursor
 set guicursor=n-v-c:block-Cursor
@@ -275,8 +275,8 @@ set si "Smart indent
 set wrap "Wrap lines
 
 " Pretty unicode haskell symbols
-let g:haskell_conceal_wide = 1
-let g:haskell_conceal_enumerations = 1
+"let g:haskell_conceal_wide = 1
+"let g:haskell_conceal_enumerations = 1
 
 " }}}
 
