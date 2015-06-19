@@ -86,7 +86,7 @@ Plugin 'eagletmt/neco-ghc'
 Plugin 'Twinside/vim-hoogle'
 
 " Colorscheme
-Plugin 'vim-scripts/wombat256.vim'
+Plugin 'altercation/vim-colors-solarized'
 
 " Custom bundles
 if filereadable(expand("~/.vim.local/bundles.vim"))
@@ -175,7 +175,9 @@ set mouse=a
 " Colors and Fonts {{{
 
 try
-  colorscheme wombat256mod
+  set background=light
+  let g:solarized_termcolors=256
+  colorscheme solarized
 catch
 endtry
 
@@ -183,9 +185,9 @@ endtry
 syntax enable
 
 " Adjust signscolumn and syntastic to match wombat
-hi! link SignColumn LineNr
-hi! link SyntasticErrorSign ErrorMsg
-hi! link SyntasticWarningSign WarningMsg
+" hi! link SignColumn LineNr
+" hi! link SyntasticErrorSign ErrorMsg
+" hi! link SyntasticWarningSign WarningMsg
 
 " Use pleasant but very visible search hilighting
 hi Search ctermfg=white ctermbg=173 cterm=none guifg=#ffffff guibg=#e5786d gui=none
@@ -196,7 +198,7 @@ filetype plugin on
 filetype indent on
 
 " Match wombat colors in nerd tree
-hi Directory guifg=#8ac6f2
+" hi Directory guifg=#8ac6f2
 
 " Searing red very visible cursor
 hi Cursor guibg=red
