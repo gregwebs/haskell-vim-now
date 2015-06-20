@@ -41,11 +41,11 @@ fi
 endpath="$HOME/.haskell-vim-now"
 
 if [ ! -e $endpath/.git ]; then
-  msg "Cloning begriffs/haskell-vim-now"
-  git clone https://github.com/begriffs/haskell-vim-now.git $endpath
+  msg "Cloning gregwebs/haskell-vim-now"
+  git clone https://github.com/gregwebs/haskell-vim-now.git $endpath
 else
   msg "Existing installation detected"
-  msg "Updating from begriffs/haskell-vim-now"
+  msg "Updating from gregwebs/haskell-vim-now"
   cd $endpath && git pull
 fi
 
