@@ -6,6 +6,9 @@ set foldnestmax=5
 set foldlevelstart=99
 set foldcolumn=0
 
+" not using a leader
+" that makes it easy to use while in insert mode
+set pastetoggle=<F2>
 
 " Sets how many lines of history VIM has to remember
 set history=700
